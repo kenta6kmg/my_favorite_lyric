@@ -1,0 +1,10 @@
+<div class="contents row">
+  <% @lyrics.each do |lyric| %>
+    <div class="content_post">
+      <p><%= lyric.text %></p>
+      <span class="name">
+        <%= lyric.lyric %>
+      </span>
+    </div>
+  <% end %>
+</div>
