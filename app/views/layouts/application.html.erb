@@ -1,23 +1,25 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>MyFavoriteLyric</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<!DOCTYPE HTML>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>My Favorite Lyrics</title>
+</head>
+<body>
+  <header>
+    <div class="heading">
+      <h1 class="title">My Favorite Lyrics</h1>
+    </div>
+    <div class="navbar">
+      <ul class="nav-lists">
+        <li>ログイン</li>
+        <li>新規登録</li>
+      </ul>
+    </div>
+  </header>
 
-  <body>
-  <header class="header">
-      <div class="header__bar row">
-        <h1 class="grid-6"><a href="/">MyFavoriteLyric</a></h1>
-        <div class="user_nav grid-6">
-          <a class="post" href="/lyrics/new">投稿する</a>
-        </div>
-      </div>
-    </header>
-    <%= yield %>
-  </body>
+  <div class="contents">
+  </div>
+  <footer>
+  </footer>
+</body>
 </html>
