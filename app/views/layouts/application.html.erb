@@ -11,13 +11,11 @@
 <body>
   <header>
     <div class="heading">
-      <h1 class="title">My Favorite Lyrics</h1>
+      <h1 class="title"><a href="/">My Favorite Lyrics</a></h1>
     </div>
     <div class="navbar">
-      <ul class="nav-lists">
-        <li>ログイン</li>
-        <li>新規登録</li>
-      </ul>
+      <%= link_to "ログイン", new_user_session_path, class: "post" %>
+            <%= link_to "新規登録", new_user_registration_path, class: "post" %>
     </div>
   </header>
 
