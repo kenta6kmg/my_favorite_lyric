@@ -11,6 +11,11 @@ class LyricsController < ApplicationController
     Lyric.create(lyric_params)
   end
 
+  def destroy
+    lyric = Lyric.find(params[:id])
+    lyric.destroy
+  end
+
   private
   def lyric_params
     params.require(:lyric).permit(:lyric, :song, :artist)
