@@ -1,0 +1,9 @@
+<h1>新規投稿ページ</h1>
+    <%= form_with(model: @lyric, local: true) do |form| %>
+      <%= form.text_field :lyric, placeholder: "lyric" %>
+      <%= form.text_field :song, placeholder: "song" %>
+      <%= form.text_field :artist, placeholder: "artist" %>
+      <%= form.submit '投稿する' %>
+    <% end %>
+  </div>
+</div>
