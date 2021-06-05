@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <head>
   <meta charset="UTF-8">
-  <%# <link rel="stylesheet" href="style.css"> %>
   <title>My Favorite Lyrics</title>
   <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -14,18 +13,11 @@
       <h1 class="title"><a href="/">My Favorite Lyrics</a></h1>
     </div>
     <div class="navbar">
-      <%= link_to "ログイン", new_user_session_path, class: "post" %>
-            <%= link_to "新規登録", new_user_registration_path, class: "post" %>
+      <%= link_to "投稿する", new_lyric_path, class: "bar" %>
+      <%= link_to "ログイン", new_user_session_path, class: "bar" %>
+      <%= link_to "新規登録", new_user_registration_path, class: "bar" %>
     </div>
   </header>
-
-  <div class="contents">
-
-
   <%= yield %>
-
-  </div>
-  <footer>
-  </footer>
 </body>
 </html>
