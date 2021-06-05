@@ -4,6 +4,7 @@
         <%= lyric.lyric %>
         <%= lyric.song %>
         <%= lyric.artist %>
+        <%= link_to '編集', edit_lyric_path(lyric.id), method: :get %>
         <%= link_to '削除', lyric_path(lyric.id), method: :delete %>
        </div> 
     </div>
