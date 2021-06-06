@@ -1,11 +1,10 @@
   <% @lyrics.each do |lyric| %>
-     <div class="post">
-      <div class="post-date">
-        <%= lyric.lyric %>
-        <%= lyric.song %>
-        <%= lyric.artist %>
-        <%= link_to '編集', edit_lyric_path(lyric.id), method: :get %>
-        <%= link_to '削除', lyric_path(lyric.id), method: :delete %>
+     <%= render partial: "lyric", locals: { lyric: lyric } %>
+        <span class="name">
+        <a href="/user/<%= lyric.user.id %>">
+          <span>投稿者</span><%= lyric.user.nickname %>
+        </a>
+      </span>
        </div> 
     </div>
   <% end %>
