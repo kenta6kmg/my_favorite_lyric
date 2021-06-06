@@ -2,7 +2,7 @@ class LyricsController < ApplicationController
   before_action :move_to_index, except: :index
   
   def index
-    @lyrics = Lyric.all
+    @lyrics = Lyric.includes(:user).order("created_at DESC")
   end
 
   def new
@@ -29,7 +29,7 @@ class LyricsController < ApplicationController
 
   private
   def lyric_params
-    params.require(:lyric).permit(:lyric, :song, :artist)
+    params.require(:lyric).permit(:lyric, :song, :artist).merge(user_id: current_user.id)
   end
 
   def move_to_index

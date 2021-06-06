@@ -19,6 +19,7 @@
      <div class="navbar-1">
       <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
       <%= link_to "投稿する", new_lyric_path, class: "bar" %>
+      <%= link_to "マイページ","/users/#{current_user.id}" %>
       </div>
         <% else %>
       <div class="navbar-2">
