@@ -1,6 +1,7 @@
   <% @lyrics.each do |lyric| %>
      <%= render partial: "lyric", locals: { lyric: lyric } %>
         <span class="name">
+        <%= link_to 'コメント', lyric_path(lyric.id), method: :get %>
         <a href="/user/<%= lyric.user.id %>">
           <span>投稿者</span><%= lyric.user.nickname %>
         </a>

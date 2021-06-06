@@ -22,6 +22,10 @@ class LyricsController < ApplicationController
     lyric.update(lyric_params)
   end
 
+  def show
+    @lyric = Lyric.find(params[:id])
+  end
+
   def destroy
     lyric = Lyric.find(params[:id])
     lyric.destroy
