@@ -16,7 +16,7 @@ ul,li {
 
 header {
   height: 50px;
-  background-color: powderblue;
+  background-color: rgb(122, 179, 233);
   padding: 10px, 0px;
   display: flex;
 }

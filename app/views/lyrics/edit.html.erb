@@ -1,0 +1,9 @@
+<h1>編集ページ</h1>
+    <%= form_with(model: @lyric, local: true) do |form| %>
+      <%= form.text_field :lyric, placeholder: "lyric" %>
+      <%= form.text_field :song, placeholder: "song" %>
+      <%= form.text_field :artist, placeholder: "artist" %>
+      <%= form.submit '編集する' %>
+    <% end %>
+  </div>
+</div>
