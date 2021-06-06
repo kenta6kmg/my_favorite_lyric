@@ -46,12 +46,13 @@ li {
   margin: 0 10px;
 }
 
-.post{
+.post {
   border: 1px solid;
   width: 40%;
-  margin-top: 30px;
+  padding: 10px;
+  margin: 10px;
 }
 
-.post-date{
-  margin-top: 10px;
+.name {
+  margin: 440px;
 }

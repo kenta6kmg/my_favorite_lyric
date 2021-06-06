@@ -1,5 +1,6 @@
 class LyricsController < ApplicationController
   before_action :move_to_index, except: :index
+  before_action :set_lyric, only: [:edit, :show]
   
   def index
     @lyrics = Lyric.includes(:user).order("created_at DESC")
@@ -14,12 +15,16 @@ class LyricsController < ApplicationController
   end
 
   def edit
-    @lyric = Lyric.find(params[:id])
   end
 
   def update
     lyric = Lyric.find(params[:id])
     lyric.update(lyric_params)
+  end
+
+  def show
+    @comment = Comment.new
+    @comments = @lyric.comments.includes(:user)
   end
 
   def destroy
@@ -30,6 +35,10 @@ class LyricsController < ApplicationController
   private
   def lyric_params
     params.require(:lyric).permit(:lyric, :song, :artist).merge(user_id: current_user.id)
+  end
+
+  def set_lyric
+    @lyric = Lyric.find(params[:id])
   end
 
   def move_to_index
