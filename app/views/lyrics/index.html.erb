@@ -4,7 +4,7 @@
      <%= render partial: "lyric", locals: { lyric: lyric } %>
     <div class="content-name" >
        <%= link_to 'コメント', lyric_path(lyric.id), method: :get %>
-       <%= link_to lyric.user.nickname, user_path(lyric.user) %>
+       <%= link_to lyric.user.nickname, user_path(lyric.user), method: :get %>
    </div>
   </div>
   <% end %>
