@@ -5,4 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :lyrics
   has_many :comments
+  validates :nickname, presence: true
 end
