@@ -29,15 +29,12 @@ header {
 .navbar {
   width: 50%;
   padding: 20px;
+  text-align: right;
 }
 
 .nav-lists {
   display: flex;
   justify-content: space-around;
-}
-
-li {
-  list-style: none;
 }
 
 .contents {
@@ -48,11 +45,25 @@ li {
 
 .post {
   border: 1px solid;
-  width: 40%;
+  width: 55%;
   padding: 10px;
   margin: 10px;
 }
 
-.name {
-  margin: 440px;
+.content-name {
+  text-align: center;
+}
+
+.container {
+  padding-left: 20px;
+}
+
+.comments {
+  width: 70%;
+  padding-left: 20px;
+}
+
+.comments-1 {
+  border: 1px solid;
+  padding: 10px;
 }

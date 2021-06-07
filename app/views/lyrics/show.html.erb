@@ -4,6 +4,7 @@
      <%= @lyric.song %>/
      <%= @lyric.artist %>/
   </div> 
+</div>
 
   <div class="container">
    <% if user_signed_in? %>
@@ -14,10 +15,14 @@
   </div>
   <% end %>
 
-  <div class="comments">
+ <div class="comments">
    <h4><コメント一覧></h4>
+   <div class="comments-1">
    <% @comments.each do |comment| %>
-   <p><%= comment.text %></p>
+   <p>
+   <%= link_to comment.user.nickname, "/users/#{comment.user_id}" %> :
+   <%= comment.text %>
    <% end %>
-  </div>
-</div>
+   </p>
+ </div>
+
