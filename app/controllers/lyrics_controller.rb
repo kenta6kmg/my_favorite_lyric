@@ -1,5 +1,5 @@
 class LyricsController < ApplicationController
-  before_action :move_to_index, except: :index
+  before_action :move_to_index, except: [:index, :search]
   before_action :set_lyric, only: [:edit, :show]
   
   def index
@@ -25,6 +25,10 @@ class LyricsController < ApplicationController
   def show
     @comment = Comment.new
     @comments = @lyric.comments.includes(:user)
+  end
+
+  def search
+    @lyrics = Lyric.search(params[:keyword])
   end
 
   def destroy
