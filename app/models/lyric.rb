@@ -3,4 +3,5 @@ class Lyric < ApplicationRecord
   validates :song, presence: true
   validates :artist, presence: true
   belongs_to :user
+  has_many :comments
 end
