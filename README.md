@@ -28,11 +28,12 @@
 
 ## lyrics テーブル
 
-| Column | Type   | Options     |
-| ------ | ------ | ----------- |
-| lyric  | string | null: false |
-| song   | string | null: false |
-| artist | string | null: false |
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| lyric  | string     | null: false                    |
+| song   | string     | null: false                    |
+| artist | string     | null: false                    |
+| user   | references | null: false, foreign_key: true |
 
 ### Association
 

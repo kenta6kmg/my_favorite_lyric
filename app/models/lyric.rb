@@ -13,3 +13,4 @@ class Lyric < ApplicationRecord
     end
   end
 end
+

@@ -53,14 +53,14 @@ header {
 
 .content {
   height: 1000px;
-  
+
 }
 
 .post {
   border: 1px solid;
   width: 55%;
   padding: 20px;
-  margin: 20px;
+  margin: 15px 0 0 20px;
 }
 
 .post-date {
@@ -68,8 +68,9 @@ header {
   padding: 10px;
 }
 
-.content-name {
-  text-align: center;
+.comment-date {
+  text-decoration: none;
+  margin-left: 700px;
 }
 
 .container {
@@ -93,7 +94,7 @@ header {
 
 .search-input {
   width: 40%;
-  margin: 20px;
-  padding: 20px;
+  margin-left: 30px;
+  padding: 10px;
 }
 
