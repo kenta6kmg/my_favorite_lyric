@@ -1,20 +1,20 @@
+  <div class="content">
   <%= form_with(url: search_lyrics_path, local: true, method: :get, class: "search-form") do |form| %>
   <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input" %>
   <%= form.submit "検索", class: "search-btn" %>
 <% end %>
-  <div class="content">
+  
   <% @lyrics.each do |lyric| %>
    <div class="name" >
      <%= render partial: "lyric", locals: { lyric: lyric } %>
-     
     <div class="content-name" >
     <% if user_signed_in? %>
-       <%= link_to 'コメント', lyric_path(lyric.id), method: :get %>
-       <%#= link_to lyric.user.nickname, user_path(lyric.user), method: :get %>
+       <%= link_to 'コメント', lyric_path(lyric.id), method: :get, class: "comment-date" %>
+       <%= link_to lyric.user.nickname, user_path(lyric.user), method: :get %>
    </div>
    <% end %>
-  </div>
   <% end %>
+  </div>
 </div>
 
 
