@@ -10,7 +10,7 @@
     <div class="content-name" >
     <% if user_signed_in? %>
        <%= link_to 'コメント', lyric_path(lyric.id), method: :get, class: "comment-date" %>
-       <%= link_to lyric.user.nickname, user_path(lyric.user), method: :get %>
+       <%= link_to lyric.user.nickname, user_path(lyric.user), method: :get, class: "date-1" %>
    </div>
    <% end %>
   <% end %>

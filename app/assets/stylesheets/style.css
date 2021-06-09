@@ -71,6 +71,12 @@ header {
 .comment-date {
   text-decoration: none;
   margin-left: 700px;
+  color: black;
+}
+
+.date-1{
+  text-decoration: none;
+  color: black;
 }
 
 .container {
