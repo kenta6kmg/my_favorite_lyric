@@ -11,7 +11,12 @@ class LyricsController < ApplicationController
   end
 
   def create
-    Lyric.create(lyric_params)
+    @lyric = Lyric.new(lyric_params)
+    if @lyric.save
+      redirect_to root_path
+    else
+      render :new
+    end
   end
 
   def edit
