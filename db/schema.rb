@@ -23,9 +23,9 @@ ActiveRecord::Schema.define(version: 2021_06_08_131931) do
   end
 
   create_table "lyrics", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "lyric"
-    t.string "song"
-    t.string "artist"
+    t.string "lyric", null: false
+    t.string "song", null: false
+    t.string "artist", null: false
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
