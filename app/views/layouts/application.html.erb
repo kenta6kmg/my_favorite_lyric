@@ -17,6 +17,7 @@
     <div class="navbar">
     <% if user_signed_in? %>
      <div class="navbar-1">
+      <%= "#{current_user.nickname}さん"%>
       <%= link_to "投稿する", new_lyric_path, class: "bar" %>
       <%= link_to "マイページ","/users/#{current_user.id}", class: "bar" %>
       <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "bar" %>
