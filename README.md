@@ -56,7 +56,7 @@ Basic認証  ID:admin
 ## バックエンド
 Ruby,Ruby on Rails
 ## フロントエンド
-HTML、CSS
+HTML,CSS
 ## データベース
 MySQL,SequelPro
 ## Webサーバ（本番環境）
