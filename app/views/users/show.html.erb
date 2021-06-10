@@ -2,8 +2,8 @@
 <% @lyrics.each do |lyric| %>
    <%= render partial: "lyrics/lyric", locals: { lyric: lyric } %>
       <% if user_signed_in? && current_user.id == lyric.user_id %>
-        <%= link_to '編集', edit_lyric_path(lyric.id), method: :get %>
-        <%= link_to '削除', lyric_path(lyric.id), method: :delete %>
+        <%= link_to '編集', edit_lyric_path(lyric.id), method: :get, class: "comment-date" %>
+        <%= link_to '削除', lyric_path(lyric.id), method: :delete, class: "date-1" %>
       <% end %>
        </div> 
     </div>

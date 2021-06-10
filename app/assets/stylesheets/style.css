@@ -79,6 +79,12 @@ header {
   color: black;
 }
 
+.date-2{
+  text-decoration: none;
+  color: black;
+  margin-left: 300px;
+}
+
 .container {
   padding-left: 20px;
   margin: 10px;
