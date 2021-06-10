@@ -13,8 +13,8 @@ https://my-favorite-lyric.herokuapp.com/
 
 # テスト用アカウント
 
-Basic認証  ID:
-          Pass:
+Basic認証  ID:admin
+          Pass:2222
 
 ログイン   Email:www@www
           password:111111
@@ -59,8 +59,8 @@ Ruby,Ruby on Rails
 HTML、CSS
 ## データベース
 MySQL,SequelPro
-## インフラ
 ## Webサーバ（本番環境）
+Heroku
 ## ソース管理
 GitHub,GitHubDesktop
 ## テスト
@@ -69,7 +69,7 @@ RSpec
 VSCode
 
 # 今後実装したい機能
-- Javascriptを使ってユーザーがストレスなく使用できるよう- に実装する。
+- Javascriptを使ってユーザーがストレスなく使用できるように実装する。
 - タグ機能をつけて検索をより細かくできるように実装する。
 - 気に入った歌詞のアーティストの曲が聞けるページへ遷移できるように実装する。
 
